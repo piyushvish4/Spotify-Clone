@@ -1,29 +1,39 @@
+/*
+    Author : Piyush Sharma
+    Github : piyushvish4
+*/
+
+
+/*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body{
     background-color: antiquewhite;
 }
 
+
+/*universal operator*/
 *{
     margin: 0;
     padding: 0;
 }
 
 nav{
+    /*Font Changed to Ubuntu in all the nav bar that our document contains*/
     font-family: 'Ubuntu', sans-serif;
 }
 
 nav ul{
-    display: flex;
+    display: flex; /*all ine one horizontal line*/
     align-items: center;
-    list-style-type: none;
+    list-style-type: none; /*used for how you want your list-item marker*/
     height: 65px;
     background-color: black;
     color: white;
 }
 
 nav ul li{
-    padding: 0 12px;
+    padding: 0 12px; /* TB LR */
 }
 .brand img{
     width: 44px;
@@ -38,39 +48,41 @@ nav ul li{
 }
 
 .container{
-    min-height: 72vh;
+    min-height: 72vh;/* percentage of the height we want as it's height */
     background-color: black;
     color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
-   background-image: url('bg.jpg');
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto; /* to horizontally center the element within its container */
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
 }
 
 .bottom{
-    position: sticky;
+    position: sticky;/* it will come all along if we scroll*/
     bottom: 0;
     height: 130px;
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: center;/* used to align it in centre */
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column; /*Set the direction of the flexible items*/
 }
 
 .icons{
+    /*giving margin from the top , can also use margin: 14, 0px ;*/
     margin-top: 14px; 
 }
 .icons i{
+    /* used for playing, stoping the song, we can use the cursor on the icons*/
     cursor: pointer;
 }
 
 #myProgressBar{
-    width: 80vw; 
+    width: 80vw; /* percentage of the width we want as it's height. viewpoint width, occuping 80% of the visible part(screen) */
     cursor: pointer;
 }
 
@@ -82,7 +94,6 @@ nav ul li{
     height: 50px;
     display: flex;
     background-color: white;
-    
     color: black;
     margin: 12px 0;
     justify-content: space-between;
@@ -105,14 +116,15 @@ nav ul li{
 }
 
 .songInfo{
-    position: absolute;
-    left: 10vw;
+    position: absolute;/*shifts in the left*/
+    left: 10vw;/*absolute; or position: fixed; - the left property sets the left edge of an element to a 
+    unit to the left of the left edge of its nearest positioned ancestor.*/
     font-family: 'Varela Round', sans-serif;
 }
 
 .songInfo img{
-    opacity: 0;
-    transition: opacity 0.4s ease-in;
+    opacity: 0;/*specifies the opacity/transparency of an element*/
+    transition: opacity 0.4s ease-in; /*specifies a transition effect with a slow start*/
 }
 
 @media only screen and (max-width: 1100px) {

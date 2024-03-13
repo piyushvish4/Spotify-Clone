@@ -1,3 +1,9 @@
+<!--
+    Author : Piyush Sharma
+    Github : piyushvish4
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +14,7 @@
         <link rel="stylesheet" href="style.css">
         </head>
 <body>
-    <nav>
+    <nav><!--used to define a set of navigation links-->
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
             <li>Home</li>
@@ -22,7 +28,7 @@
             <div class="songItemContainer">
                 <div class="songItem">
                     <img alt="1">
-                    <span class="songName">Let me Love You</span>
+                    <span class="songName">Let me Love You</span><!--used to color a part of a text-->
                     <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
@@ -76,11 +82,13 @@
     </div>
 
     <div class="bottom">
+        <!--used for taking input from the user-->
+        <!--we are creating the bar that shows how much your sing is left/completed-->
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
-            <!-- fontawesome icons -->
-            <i class="fas fa-3x fa-step-backward" id="previous"></i>
-            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <!-- taking free icons from fontawesome which are copyright free -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i><!-- zooming it for better view/appearence-->
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i><!--used to add icons-->
             <i class="fas fa-3x fa-step-forward" id="next"></i> 
         </div>
         <div class="songInfo">
